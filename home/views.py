@@ -1,9 +1,8 @@
-from django.shortcuts import render, HttpResponse
-from datetime import datetime
-from home.models import contact
+from django.shortcuts import render, redirect
 from django.contrib import messages
+from datetime import datetime
+from home.models import Contact
 
-# Create your views here.
 def index(request):
     return render(request, 'home.html')
 
@@ -20,8 +19,9 @@ def contact(request):
         phone = request.POST.get('phone')
         desc = request.POST.get('desc')
         date = datetime.today()
-        Contact = contact(name=name, email=email, phone=phone, desc=desc, date = date)
+        new_contact = Contact(name=name, email=email, phone=phone, desc=desc, date=date)
+        new_contact.save()
+        messages.success(request, 'Your message has been sent successfully!')
+        return redirect('contact')  # Redirect to the contact page after form submission
 
-        Contact.save()
-        #messages.success(request, 'Your message has been sent!')
     return render(request, 'contact.html')
