@@ -1,0 +1,41 @@
+.form-group{
+    display: flex;
+    flex-direction: column; 
+    margin-top: 2rem;
+}
+
+.input1,.input2,.input3,.input4{
+    position: relative;
+    left: 3rem;
+    top: 0.5rem;
+    background-color: white;
+    z-index: 1;
+}
+
+.input1{
+    width: 2.4rem;
+}
+
+.input2{
+    width: 5.7rem;
+}
+
+.input3{
+    width: 6.1rem;
+}
+
+.input4{
+    width: 19.4rem;
+}
+
+input{
+    width: 15rem;
+    height: 2.5rem;
+    position: relative;
+    left: 2rem;
+}
+
+.Contact{
+    position: relative;
+    left: 2rem;
+}
