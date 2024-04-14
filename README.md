@@ -46,9 +46,10 @@ python manage.py runserver
 
 
 
+
 #### For further details, visit the official website
 
-https://www.djangoproject.com/download/
+https://www.djangoproject.com/
 
 
 
