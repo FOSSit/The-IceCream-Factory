@@ -5,11 +5,10 @@
 {%block body%} -->
 <link rel="stylesheet" href="style.css">
 <div class="container-fluid px-0 mb-3" >
-  <img src="/static/5.jpg" class="d-block w-100 mx-0" alt="...">
 </div>
 <div class="container mb-3 py-4">
   <h1 class="text-center Contact">Contact Us</h1>
-  <form method="post" action="/contact">
+  <form method="post" action="/contact" class="giga">
   <!-- {% csrf_token %} -->
       <div class="form-group fg">
           <label for="name" class="input1">Name</label>
@@ -31,9 +30,9 @@
           <textarea class="form-control" id="desc" rows="8" name="desc"></textarea>
       </div>
       <button type="button" class="btn btn-primary">Submit</button>
-
   </form>
-
+  <div style="text-align: center;" id="debuk"><--Please Submit the Form--></div>
+  <script src="index.js"></script>
 </div>
 <!-- {%endblock body%} -->
 

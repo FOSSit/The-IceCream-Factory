@@ -7,8 +7,8 @@
 .input1,.input2,.input3,.input4{
     position: relative;
     left: 3rem;
-    top: 0.5rem;
-    background-color: white;
+    background-color: black;
+    color: white;
     z-index: 1;
 }
 
@@ -25,6 +25,7 @@
 }
 
 .input4{
+    top: 0.1rem;
     width: 19.4rem;
 }
 
@@ -38,4 +39,9 @@ input{
 .Contact{
     position: relative;
     left: 2rem;
+}
+
+.giga{
+    background-image: url("/static/5.jpg");
+    background-size: contain;
 }
