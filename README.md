@@ -1,4 +1,4 @@
- The project aims to create a secure HTTPS website for The IceCream Factory, showcasing their menu, contact information, and various services available at their store. Additionally, registered customers will receive email notifications about discounts, new flavors, and upcoming events organized by the shop.
+ An online presence for The IceCream Factory! This website will be a secure platform showcasing their delicious offerings, contact details, and the fun services they provide. It gets even sweeter for registered customers who'll be notified by email about special deals, exciting new flavors, and cool events happening at the shop!
 
 ## FEATURES
 
@@ -65,7 +65,7 @@
     Open your web browser and go to `http://localhost:8000`.
 
 
-CD 
+
 
 
  
