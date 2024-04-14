@@ -3,11 +3,7 @@
 {% block title %}Contact Us{% endblock title %}
 
 {%block body%}
-
-<div class="container-fluid px-0 mb-3" >
-  <img src="/static/5.jpg" class="d-block w-100 mx-0" alt="...">
-</div>
-<div class="container mb-3 py-4">
+<div class="container mb-3 py-4" style="background-image: url('/static/5.jpg);">
   <h1 class="text-center">Contact Us</h1>
   <form method="post" action="/contact">
   {% csrf_token %}
@@ -32,7 +28,9 @@
       </div>
       <button class="btn btn-primary" type="submit">Submit</button>
   </form>
-
+  <div class="container-fluid px-0 mb-3" >
+    <img src="/static/5.jpg" class="d-block w-100 mx-0" alt="...">
+  </div>
 </div>
 {%endblock body%}
 

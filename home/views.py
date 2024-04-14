@@ -1,6 +1,6 @@
-from django.shortcuts import render, HttpResponse
+from django.shortcuts import render, HttpResponse,redirect
 from datetime import datetime
-from home.models import contact
+from home.models import ContactMessage
 from django.contrib import messages
 
 # Create your views here.
@@ -15,13 +15,14 @@ def services(request):
 
 def contact(request):
     if request.method == "POST":
-        name = request.POST.get('name')
+        Name = request.POST.get('name')
         email = request.POST.get('email')
         phone = request.POST.get('phone')
         desc = request.POST.get('desc')
         date = datetime.today()
-        Contact = contact(name=name, email=email, phone=phone, desc=desc, date = date)
+        contact_message=ContactMessage(name=Name, email=email, phone=phone, desc=desc, date = date)
 
-        Contact.save()
-        #messages.success(request, 'Your message has been sent!')
+        contact_message.save()
+        messages.success(request, 'Your message has been sent!')
+        return HttpResponse("<h1>submited sucessfully</h1>")
     return render(request, 'contact.html')
