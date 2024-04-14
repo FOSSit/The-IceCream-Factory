@@ -1,4 +1,16 @@
-# The-IceCream-Factory
+Getting Started
+To get started with the project, follow these steps:
 
-The Aim of our project is to create host a https website for a Ice Cream shop called The IceCream Factory with there menu, contact and different services available at there store.
-To all the resisted customers at there website they must receive an email notification about any discounts, new flavour available or any other events they might organise.
+Clone this repository to your local machine.
+Navigate to the project directory.
+Install the necessary dependencies.
+Set up the environment variables for your SMTP server.
+Run the development server.
+Open your browser and navigate to the local server to view the website.
+Features
+Menu: Browse through our delicious ice cream flavors and toppings.
+Contact: Find our contact information and get in touch with us.
+Services: Learn about the services we offer at our store.
+Email Notifications: Registered customers will receive email notifications about discounts, new flavors, and events.
+Technologies Used
+This project utilizes various technologies, including Node.js, Express.js, MongoDB, React.js, Bootstrap, and SMTP for email notifications.
