@@ -1,4 +1,10 @@
-# The-IceCream-Factory
-
-The Aim of our project is to create host a https website for a Ice Cream shop called The IceCream Factory with there menu, contact and different services available at there store.
-To all the resisted customers at there website they must receive an email notification about any discounts, new flavour available or any other events they might organise.
+git clone https://github.com/yourusername/The-IceCream-Factory.git 
+cd The-IceCream-Factory
+npm install
+PORT=3000
+DATABASE_URL=your_database_url
+SMTP_HOST=your_smtp_host
+SMTP_PORT=your_smtp_port
+SMTP_USER=your_smtp_username
+SMTP_PASS=your_smtp_password
+npm start
