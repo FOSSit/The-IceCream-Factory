@@ -1,39 +1,66 @@
-{% extends 'base.html' %}
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1,shrink-to-fit=no">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<style>
+  .navbar {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
 
-{% block title %}Contact Us{% endblock title %}
+  .form-inline {
+    overflow: hidden;
+    max-width: 0;
+    transition: max-width 0.3s ease;
+  }
 
-{%block body%}
+  .form-inline.open {
+    max-width: 200px;
+  }
 
-<div class="container-fluid px-0 mb-3" >
-  <img src="/static/5.jpg" class="d-block w-100 mx-0" alt="...">
-</div>
-<div class="container mb-3 py-4">
-  <h1 class="text-center">Contact Us</h1>
-  <form method="post" action="/contact">
-  {% csrf_token %}
-      <div class="form-group">
-          <label for="name">Name</label>
-          <input type="text" class="form-control" id="name" name="name" placeholder="Enter your Name">
-      </div>
+  .navbar-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+</style>
+<title>The Ice-Cream Factory</title>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="/">The IceCreams Factory</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+@@ -37,17 +57,28 @@
+      <li class="nav-item">
+        <a class="nav-link" href="/contact">Contact Us</a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </div>
+</nav>
+<script>
+  const searchForm = document.querySelector('.form-inline');
+  let isOpen = false;
 
-      <div class="form-group">
-          <label for="email">Email address</label>
-          <input type="email" class="form-control" id="email" name="email" placeholder="Enter Your Email">
-      </div>
-      
-      <div class="form-group">
-          <label for="phone">Phone Number</label>
-          <input type="phone" class="form-control" id="phone" name="phone" placeholder="Enter Your Phone Number">
-      </div>      
-      
-      <div class="form-group">
-          <label for="desc">Tell me about what you want to contact me for...</label>
-          <textarea class="form-control" id="desc" rows="3" name="desc"></textarea>
-      </div>
-      <button class="btn btn-primary" type="submit">Submit</button>
-  </form>
+  searchForm.addEventListener('click', function() {
+    if (isOpen) {
+      // Trigger search functionality
+      console.log('Search triggered');
+    } else {
+      // Animate open the search box
+      searchForm.classList.add('open');
+    }
 
-</div>
-{%endblock body%}
-
-
+    isOpen = !isOpen;
+  });
+</script>
+</body>
+</html>
