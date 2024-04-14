@@ -20,8 +20,8 @@ def contact(request):
         phone = request.POST.get('phone')
         desc = request.POST.get('desc')
         date = datetime.today()
-        Contact = contact(name=name, email=email, phone=phone, desc=desc, date = date)
+        Contact_entry = contact(name=name, email=email, phone=phone, desc=desc, date = date)
 
-        Contact.save()
+        Contact_entry.save()
         #messages.success(request, 'Your message has been sent!')
     return render(request, 'contact.html')
