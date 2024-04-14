@@ -13,6 +13,17 @@ def about(request):
 def services(request):
     return render(request, 'service.html')
 
+
+
+def contact(request):
+    if request.method == 'POST':
+        
+        success_message = "Thank you for contacting us! We will get back to you soon."
+        return render(request, 'contact.html', {'success_message': success_message})
+    else:
+        return render(request, 'contact.html')
+
+
 def contact(request):
     if request.method == "POST":
         name = request.POST.get('name')
