@@ -4,9 +4,17 @@
 
 {%block body%}
 
-<div class="container-fluid px-0 mb-3" >
-  <img src="/static/5.jpg" class="d-block w-100 mx-0" alt="...">
-</div>
+{% block head %}
+<style>
+  body {
+    background-image: url("/static/5.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+</style>
+{% endblock head %}
+
 <div class="container mb-3 py-4">
   <h1 class="text-center">Contact Us</h1>
   <form method="post" action="/contact">
