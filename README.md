@@ -82,4 +82,4 @@ Install a suitable email backend like django-sendmail-backend (https://pypi.org/
 Configure the email backend in settings.py with your email server details (SMTP server, port, credentials).
 Implement Email Sending Functionality:
 
-In your views or custom functions, use libraries like django.core.mail or third-party email libraries to send email notifications to customers.
+In your views or custom functions, use libraries like django.core.mail or third-party email libraries to send email notifications to customers
