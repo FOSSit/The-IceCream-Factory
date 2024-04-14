@@ -66,6 +66,6 @@ The IceCream Factory is licensed under the [insert license here]. See the LICENS
 5. **License**:
    - The IceCream Factory is licensed under the [insert license here]. See the LICENSE file for more details.
 
-Feel free to copy and paste this content into your README.md and Installation Guide. Remember to replace placeholders like `[insert license here]` with the appropriate information for your project.
+Feel free to copy and paste this content into your README.md and Installation Guide. Remember to replace placeholders like `[insert license here]` with the appropriate information for your project..
 
 
